@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singh's Image Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Singh's Image Editor</h1>
+        <div class="editor">
+            <div class="filters">
+                <button id="saturation">Saturation</button>
+                <button id="brightness" class="active">Brightness</button>
+                <button id="grayscale">Grayscale</button>
+                <button id="inversion">Inversion</button>
+                <input type="range" id="filter-slider" value="100"  min="0" max="200" step="1">
+            </div>
+            <div class="rotate-flip">
+                <button id="left">⟲</button>
+                <button id="right">⟳</button>
+                <button id="horizontal">⇔</button>
+                <button id="vertical">⇕</button>
+            </div>
+            <div class="preview">
+                <img src="" alt="Preview" class="preview-img" id="preview-img">
+            </div>
+            <div class="actions">
+                <button class="choose-img">Choose Image</button>
+                <button class="save-img">Save Image</button>
+                <button class="reset-filter">Reset Filters</button>
+            </div>
+        </div>
+    </div>
+    <input type="file" id="image-input" accept="image/*" style="display: none;">
+    <script src="./script.js"></script>
+</body>
+</html>
